@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 
 type tag =
   | "appdev"
@@ -117,7 +118,7 @@ const projects: Project[] = [
     description:
       "A simulation game focused on political elections. Players experience the complexities of electoral processes and political decision-making.",
     tags: ["gamedev", "programming"],
-    external: "https://umutbideci.itch.io/secim-oyunu",
+    external: "https://umutbideci.itch.io/secimoyunu",
     image: "https://img.itch.zone/aW1nLzE3NTA2Mzc4LnBuZw==/315x250%23c/cl%2BDCA.png",
   },
   {
@@ -141,7 +142,7 @@ const projects: Project[] = [
     description:
       "An action game developed with TEVITÖL Studio. Features engaging action sequences and compelling character development in an immersive storyline.",
     tags: ["gamedev", "csharp", "programming"],
-    external: "https://umutbideci.itch.io/adrians-tale",
+    external: "https://studiotevitol.itch.io/adrians-tale",
     image: "https://img.itch.zone/aW1nLzE3NTA2NDA4LnBuZw==/315x250%23c/4BY6OI.png",
   },
   
@@ -247,10 +248,12 @@ const projects: Project[] = [
 ];
 
 function Work() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <div>
-      <div id="work" className={"w-full px-24 font-poppins text-front"}>
-        <p className="font-extrabold text-[6em] relative left-[-10px] text-title pt-2.5">
+      <div id="work" className={"w-full px-4 sm:px-8 md:px-12 lg:px-24 font-poppins text-front"}>
+        <p className="font-extrabold text-[3em] sm:text-[4em] md:text-[5em] lg:text-[6em] relative left-[-5px] sm:left-[-7px] md:left-[-10px] text-title pt-2.5">
           work.
         </p>
         <p className="pb-8">
@@ -260,8 +263,8 @@ function Work() {
         
         {/* App Development Section */}
         <div id="app-development" className="mb-12 scroll-mt-36">
-          <h2 className="text-4xl font-bold text-title mb-6">App Development</h2>
-          <div className="grid grid-cols-3 gap-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">App Development</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {projects
               .filter(project => project.tags.includes("appdev"))
               .map((project) => {
@@ -319,7 +322,7 @@ function Work() {
                           target="_blank"
                           className="group/e"
                         >
-                          <p className="text-2xl font-extrabold pt-3 group-hover/e:text-light_blue transition-all duration-300">
+                          <p className="text-lg sm:text-xl md:text-2xl font-extrabold pt-3 group-hover/e:text-light_blue transition-all duration-300">
                             {project.name}
                           </p>
                           <p className="line-clamp-6 text-ellipsis pt-2 text-front">
@@ -399,7 +402,7 @@ function Work() {
                         })}
                         </div>
                         <div className="pt-4">
-                          <p className="text-2xl font-extrabold">
+                          <p className="text-lg sm:text-xl md:text-2xl font-extrabold">
                             {project.name}
                           </p>
                           <p className="line-clamp-6 text-ellipsis pt-2 text-front">
@@ -416,8 +419,8 @@ function Work() {
 
         {/* Game Development Section */}
         <div id="game-development" className="mb-12 scroll-mt-36">
-          <h2 className="text-4xl font-bold text-title mb-6">Game Development</h2>
-          <div className="grid grid-cols-3 gap-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">Game Development</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {projects
               .filter(project => project.tags.includes("gamedev"))
               .map((project) => {
@@ -425,11 +428,11 @@ function Work() {
                   return (
                     <div
                       key={project.name}
-                      className="transition-transform duration-500 h-[36em] w-full flex flex-col"
+                      className="transition-transform duration-500 h-[28em] sm:h-[32em] lg:h-[36em] w-full flex flex-col"
                     >
                       <div
                         style={{ backgroundImage: `url(${project.image})` }}
-                        className="rounded-t-lg bg-center bg-cover bg-no-repeat h-[36em] w-full"
+                        className="rounded-t-lg bg-center bg-cover bg-no-repeat h-[28em] sm:h-[32em] lg:h-[36em] w-full"
                       />
                       <div className="p-4 bg-white rounded-b-lg h-full">
                         <div className="inline-flex gap-4">
@@ -470,7 +473,7 @@ function Work() {
                           target="_blank"
                           className="group/e"
                         >
-                          <p className="text-2xl font-extrabold pt-3 group-hover/e:text-light_blue transition-all duration-300">
+                          <p className="text-lg sm:text-xl md:text-2xl font-extrabold pt-3 group-hover/e:text-light_blue transition-all duration-300">
                             {project.name}
                           </p>
                           <p className="line-clamp-6 text-ellipsis pt-2 text-transparent bg-gradient-to-t from-gray-500 to-front bg-clip-text">
@@ -504,11 +507,11 @@ function Work() {
                   return (
                     <div
                       key={project.name}
-                      className="transition-transform duration-500 h-[36em] w-full flex flex-col"
+                      className="transition-transform duration-500 h-[28em] sm:h-[32em] lg:h-[36em] w-full flex flex-col"
                     >
                       <div
                         style={{ backgroundImage: `url(${project.image})` }}
-                        className="rounded-t-lg bg-center bg-cover bg-no-repeat h-[36em] w-full"
+                        className="rounded-t-lg bg-center bg-cover bg-no-repeat h-[28em] sm:h-[32em] lg:h-[36em] w-full"
                       />
                       <div className="p-4 bg-white rounded-b-lg h-full">
                         <div className="inline-flex gap-4">
@@ -545,7 +548,7 @@ function Work() {
                           })}
                         </div>
                         <div className="pt-4">
-                          <p className="text-2xl font-extrabold">
+                          <p className="text-lg sm:text-xl md:text-2xl font-extrabold">
                             {project.name}
                           </p>
                           <p className="line-clamp-6 text-ellipsis pt-2 text-transparent bg-gradient-to-t from-gray-500/5 to-front bg-clip-text">
@@ -582,7 +585,7 @@ function Work() {
 
         {/* Music Section */}
         <div id="music" className="mb-12 scroll-mt-36">
-          <h2 className="text-4xl font-bold text-title mb-6">Music</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">Music</h2>
           <p className="pb-8 mb-6">
             I am a School Band Performer & Head. I lead the school band; organized 4+ concerts, performed in 15+, 
             played bass, guitar, piano, drums & vocals, mentored peers, and am now recording an original album.
@@ -604,9 +607,9 @@ function Work() {
           
           {/* Photo Gallery Section */}
           <div className="mt-6">
-            <h3 className="text-3xl font-bold text-title mb-6">Photo Gallery</h3>
-            <div className="bg-white rounded-lg p-6 shadow-soft">
-              <div className="grid grid-cols-3 gap-4" id="music-gallery">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-title mb-6">Gallery</h3>
+            <div className="bg-white rounded-lg p-4 sm:p-6 shadow-soft">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4" id="music-gallery">
                 <div className="aspect-square overflow-hidden rounded-lg bg-gray-200">
                   <iframe
                     src="https://www.youtube.com/embed/XS6TR2-Q2aA"
@@ -616,35 +619,50 @@ function Work() {
                     allowFullScreen
                   />
                 </div>
-                <div className="aspect-square overflow-hidden rounded-lg bg-gray-200">
+                <div 
+                  className="aspect-square overflow-hidden rounded-lg bg-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() => setSelectedImage("/gallery /image copy 2.png")}
+                >
                   <img 
                     src="/gallery /image copy 2.png" 
                     alt="Music performance" 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="aspect-square overflow-hidden rounded-lg bg-gray-200">
+                <div 
+                  className="aspect-square overflow-hidden rounded-lg bg-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() => setSelectedImage("/gallery /image copy 3.png")}
+                >
                   <img 
                     src="/gallery /image copy 3.png" 
                     alt="Music performance" 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="aspect-square overflow-hidden rounded-lg bg-gray-200">
+                <div 
+                  className="aspect-square overflow-hidden rounded-lg bg-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() => setSelectedImage("/gallery /image copy 4.png")}
+                >
                   <img 
                     src="/gallery /image copy 4.png" 
                     alt="Music performance" 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="aspect-square overflow-hidden rounded-lg bg-gray-200">
+                <div 
+                  className="aspect-square overflow-hidden rounded-lg bg-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() => setSelectedImage("/gallery /image copy.png")}
+                >
                   <img 
                     src="/gallery /image copy.png" 
                     alt="Music performance" 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="aspect-square overflow-hidden rounded-lg bg-gray-200">
+                <div 
+                  className="aspect-square overflow-hidden rounded-lg bg-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() => setSelectedImage("/gallery /image.png")}
+                >
                   <img 
                     src="/gallery /image.png" 
                     alt="Music performance" 
@@ -656,6 +674,42 @@ function Work() {
           </div>
         </div>
       </div>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center">
+            <img 
+              src={selectedImage} 
+              alt="Full size" 
+              className="max-w-full max-h-full object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 bg-white bg-opacity-20 hover:bg-opacity-30 text-white rounded-full p-3 transition-all duration-200"
+              aria-label="Close"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

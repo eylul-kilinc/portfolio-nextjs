@@ -2,25 +2,36 @@ export default function Hero() {
   return (
     <div
       className={
-        "flex w-full h-[75vh] justify-between px-24 items-center font-poppins text-front"
+        "flex flex-col md:flex-row w-full h-auto min-h-[60vh] sm:min-h-[75vh] justify-between px-4 sm:px-8 md:px-12 lg:px-24 items-center font-poppins text-front py-8 sm:py-0"
       }
     >
-      <div className="w-full leading-none">
-        <p className="font-medium text-3xl">Hello! I&apos;m Umut,</p>
-        <p className="font-extrabold text-[6em] relative left-[-10px] pt-2.5">
+      {/* Mobile Photo - Top */}
+      <div className="md:hidden w-full flex justify-center mb-6">
+        <div className="relative w-48 h-48 rounded-full overflow-hidden">
+          <img
+            src="/umut copy.png"
+            alt="Umut Bideci"
+            className="w-full h-full object-cover object-top scale-110"
+          />
+        </div>
+      </div>
+      
+      <div className="w-full leading-none z-10">
+        <p className="font-medium text-xl sm:text-2xl md:text-3xl">Hello! I&apos;m Umut,</p>
+        <p className="font-extrabold text-[2.5em] sm:text-[3.5em] md:text-[5em] lg:text-[6em] relative left-[-3px] sm:left-[-5px] md:left-[-7px] lg:left-[-10px] pt-2.5">
           High School
         </p>
-        <p className="font-extrabold text-[6em] relative left-[-10px] ">
+        <p className="font-extrabold text-[2.5em] sm:text-[3.5em] md:text-[5em] lg:text-[6em] relative left-[-3px] sm:left-[-5px] md:left-[-7px] lg:left-[-10px]">
           Student
         </p>
-        <p className="font-medium text-3xl pt-4">studying at Inanc High School.</p>
-        <p className="font-medium text-2xl pt-2">passionate about Computer Science and Music.</p>
+        <p className="font-medium text-xl sm:text-2xl md:text-3xl pt-4">studying at Inanc High School.</p>
+        <p className="font-medium text-lg sm:text-xl md:text-2xl pt-2">passionate about Computer Science and Music.</p>
       </div>
-      <div className="absolute top-0 right-0 h-full w-full">
+      <div className="hidden md:block absolute top-0 right-0 h-full w-full overflow-hidden">
         <svg
           width="750"
           height="500"
-          className="absolute scale-110 top-[16%] right-0"
+          className="absolute scale-75 lg:scale-110 top-[16%] right-0"
         >
           <mask id="svgmask3">
             <g transform="translate(125, 0)" width="100%" height="100%">
@@ -28,7 +39,7 @@ export default function Hero() {
             </g>
           </mask>
           <image
-            xlinkHref="/umut.jpeg"
+            xlinkHref="/umut copy.png"
             mask="url(#svgmask3)"
             className="w-[750px] h-[500px]"
           ></image>
