@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://ardaozyigit.info/sitemap.xml",
+    sitemap: "https://umutbideci.com/sitemap.xml",
   };
 }

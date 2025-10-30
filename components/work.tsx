@@ -233,7 +233,7 @@ const projects: Project[] = [
   },
   {
     name: "Tribute Night '25",
-    description: "Model",
+    description: "",
     tags: ["music"],
     external: "#",
     image: "",
@@ -253,17 +253,17 @@ function Work() {
   return (
     <div>
       <div id="work" className={"w-full px-4 sm:px-8 md:px-12 lg:px-24 font-poppins text-front"}>
-        <p className="font-extrabold text-[3em] sm:text-[4em] md:text-[5em] lg:text-[6em] relative left-[-5px] sm:left-[-7px] md:left-[-10px] text-title pt-2.5">
+        <h2 className="font-extrabold text-[3em] sm:text-[4em] md:text-[5em] lg:text-[6em] relative left-[-5px] sm:left-[-7px] md:left-[-10px] text-title pt-2.5">
           work.
-        </p>
+        </h2>
         <p className="pb-8">
-          I have worked on diverse projects throughout my student career at
+          <strong>Umut Bideci</strong> has worked on diverse projects throughout his student career at
           TEV İnanç High School, spanning app development, game development, and music.
         </p>
         
         {/* App Development Section */}
-        <div id="app-development" className="mb-12 scroll-mt-36">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">App Development</h2>
+        <section id="app-development" className="mb-12 scroll-mt-36">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">App Development by Umut Bideci</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {projects
               .filter(project => project.tags.includes("appdev"))
@@ -415,11 +415,11 @@ function Work() {
                 }
               })}
           </div>
-        </div>
+        </section>
 
         {/* Game Development Section */}
-        <div id="game-development" className="mb-12 scroll-mt-36">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">Game Development</h2>
+        <section id="game-development" className="mb-12 scroll-mt-36">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">Game Development by Umut Bideci</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {projects
               .filter(project => project.tags.includes("gamedev"))
@@ -581,14 +581,14 @@ function Work() {
                 }
               })}
           </div>
-        </div>
+        </section>
 
         {/* Music Section */}
-        <div id="music" className="mb-12 scroll-mt-36">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">Music</h2>
+        <section id="music" className="mb-12 scroll-mt-36">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">Music by Umut Bideci</h2>
           <p className="pb-8 mb-6">
-            I am a School Band Performer & Head. I lead the school band; organized 4+ concerts, performed in 15+, 
-            played bass, guitar, piano, drums & vocals, mentored peers, and am now recording an original album.
+            <strong>Umut Bideci</strong> is a School Band Performer & Head. Umut Bideci leads the school band; organized 4+ concerts, performed in 15+, 
+            played bass, guitar, piano, drums & vocals, mentored peers, and is now recording an original album.
           </p>
           <div className="bg-white rounded-lg p-6 shadow-soft">
             <ul className="space-y-3">
@@ -613,7 +613,7 @@ function Work() {
                 <div className="aspect-square overflow-hidden rounded-lg bg-gray-200">
                   <iframe
                     src="https://www.youtube.com/embed/XS6TR2-Q2aA"
-                    title="Music performance video"
+                    title="Umut Bideci - Music performance video"
                     className="w-full h-full"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -625,7 +625,7 @@ function Work() {
                 >
                   <img 
                     src="/gallery /image copy 2.png" 
-                    alt="Music performance" 
+                    alt="Umut Bideci - Music performance" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -635,7 +635,7 @@ function Work() {
                 >
                   <img 
                     src="/gallery /image copy 3.png" 
-                    alt="Music performance" 
+                    alt="Umut Bideci - Music performance" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -645,7 +645,7 @@ function Work() {
                 >
                   <img 
                     src="/gallery /image copy 4.png" 
-                    alt="Music performance" 
+                    alt="Umut Bideci - Music performance" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -655,7 +655,7 @@ function Work() {
                 >
                   <img 
                     src="/gallery /image copy.png" 
-                    alt="Music performance" 
+                    alt="Umut Bideci - Music performance" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -665,14 +665,14 @@ function Work() {
                 >
                   <img 
                     src="/gallery /image.png" 
-                    alt="Music performance" 
+                    alt="Umut Bideci - Music performance" 
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
 
       {/* Image Modal */}

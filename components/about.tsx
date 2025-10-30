@@ -4,9 +4,9 @@ function About() {
   return (
     <div>
       <div id="about" className={"w-full px-4 sm:px-8 md:px-12 lg:px-24 pt-8 font-poppins text-front"}>
-        <p className="font-extrabold text-[3em] sm:text-[4em] md:text-[5em] lg:text-[6em] relative left-[-5px] sm:left-[-7px] md:left-[-10px] text-title pt-2.5">
+        <h2 className="font-extrabold text-[3em] sm:text-[4em] md:text-[5em] lg:text-[6em] relative left-[-5px] sm:left-[-7px] md:left-[-10px] text-title pt-2.5">
           about.
-        </p>
+        </h2>
         <p className="pb-4">
           I am a high school student at TEV İnanç High School, passionate about Computer Science 
           and Music. Throughout my academic journey, I have been actively involved 
@@ -14,7 +14,7 @@ function About() {
         </p>
         
         {/* Test Scores Section */}
-        <div className="mb-8">
+        <section className="mb-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">Test Scores</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div className="bg-white rounded-lg p-6 shadow-soft">
@@ -49,8 +49,10 @@ function About() {
               </div>
             </div>
           </div>
-        </div>
-        <ol className="relative border-s border-gray-200 dark:border-gray-700 ml-4 sm:ml-8 md:ml-16 lg:ml-72 mr-4 sm:mr-8 md:mr-12 lg:mr-36">
+        </section>
+        <section className="mt-8">
+          <h2 className="sr-only">Activities and Achievements by Umut Bideci</h2>
+          <ol className="relative border-s border-gray-200 dark:border-gray-700 ml-4 sm:ml-8 md:ml-16 lg:ml-72 mr-4 sm:mr-8 md:mr-12 lg:mr-36">
           <li className="mb-4 ms-4">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
             <h3 className="text-lg font-semibold text-front">
@@ -291,6 +293,7 @@ function About() {
             </p>
           </li>
         </ol>
+        </section>
       </div>
     </div>
   );

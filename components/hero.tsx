@@ -17,7 +17,8 @@ export default function Hero() {
       </div>
       
       <div className="w-full leading-none z-10">
-        <p className="font-medium text-xl sm:text-2xl md:text-3xl">Hello! I&apos;m Umut,</p>
+        <h1 className="sr-only">Umut Bideci - Developer, Student, Creative Builder</h1>
+        <p className="font-medium text-xl sm:text-2xl md:text-3xl">Hello! I&apos;m Umut Bideci,</p>
         <p className="font-extrabold text-[2.5em] sm:text-[3.5em] md:text-[5em] lg:text-[6em] relative left-[-3px] sm:left-[-5px] md:left-[-7px] lg:left-[-10px] pt-2.5">
           High School
         </p>
