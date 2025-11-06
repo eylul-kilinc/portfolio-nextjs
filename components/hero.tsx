@@ -16,17 +16,16 @@ export default function Hero() {
         </div>
       </div>
       
-      <div className="w-full leading-none z-10">
+      <div className="w-full md:max-w-xl lg:max-w-2xl xl:max-w-3xl leading-none z-10 md:pr-8">
         <h1 className="sr-only">Umut Bideci - Developer, Student, Creative Builder</h1>
-        <p className="font-medium text-xl sm:text-2xl md:text-3xl">Hello! I&apos;m Umut Bideci,</p>
-        <p className="font-extrabold text-[2.5em] sm:text-[3.5em] md:text-[5em] lg:text-[6em] relative left-[-3px] sm:left-[-5px] md:left-[-7px] lg:left-[-10px] pt-2.5">
-          High School
+        <p className="font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2">Hello! I&apos;m Umut Bideci,</p>
+        <p className="font-extrabold text-[2em] sm:text-[2.5em] md:text-[3.5em] lg:text-[4.5em] xl:text-[5.5em] relative left-[-2px] sm:left-[-3px] md:left-[-5px] lg:left-[-7px] xl:left-[-9px] leading-tight">
+          I build communities,
         </p>
-        <p className="font-extrabold text-[2.5em] sm:text-[3.5em] md:text-[5em] lg:text-[6em] relative left-[-3px] sm:left-[-5px] md:left-[-7px] lg:left-[-10px]">
-          Student
+        <p className="font-extrabold text-[2em] sm:text-[2.5em] md:text-[3.5em] lg:text-[4.5em] xl:text-[5.5em] relative left-[-2px] sm:left-[-3px] md:left-[-5px] lg:left-[-7px] xl:left-[-9px] leading-tight">
+          software, and music.
         </p>
-        <p className="font-medium text-xl sm:text-2xl md:text-3xl pt-4">studying at Inanc High School.</p>
-        <p className="font-medium text-lg sm:text-xl md:text-2xl pt-2">passionate about Computer Science and Music.</p>
+        <p className="font-medium text-base sm:text-lg md:text-xl lg:text-2xl pt-3 sm:pt-4 max-w-2xl">I study at İnanç High School, a nationally-selected boarding school for high-achieving and gifted students in Turkey.</p>
       </div>
       <div className="hidden md:block absolute top-0 right-0 h-full w-full overflow-hidden">
         <svg
