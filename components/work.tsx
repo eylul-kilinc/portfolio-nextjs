@@ -257,8 +257,8 @@ function Work() {
           work.
         </h2>
         <p className="pb-8">
-          <strong>Umut Bideci</strong> has worked on diverse projects throughout his student career at
-          TEV İnanç High School, spanning app development, game development, and music.
+          I  worked on diverse projects throughout my student career at
+          İnanç High School, mainly in app development, game development, and music.
         </p>
         
         {/* App Development Section */}
@@ -587,8 +587,8 @@ function Work() {
         <section id="music" className="mb-12 scroll-mt-36">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">Music by Umut Bideci</h2>
           <p className="pb-8 mb-6">
-            <strong>Umut Bideci</strong> is a School Band Performer & Head. Umut Bideci leads the school band; organized 4+ concerts, performed in 15+, 
-            played bass, guitar, piano, drums & vocals, mentored peers, and is now recording an original album.
+            I'm a School Band Performer & Head, I also lead the school band; organized 4+ concerts, performed in 15+, 
+            played bass, guitar, piano, drums & vocals, mentored peers, and now I'm recording an original album.
           </p>
           <div className="bg-white rounded-lg p-6 shadow-soft">
             <ul className="space-y-3">
