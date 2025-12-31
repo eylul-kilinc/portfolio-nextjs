@@ -587,8 +587,8 @@ function Work() {
         <section id="music" className="mb-12 scroll-mt-36">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-title mb-6">Music by Umut Bideci</h2>
           <p className="pb-8 mb-6">
-            I'm a School Band Performer & Head, I also lead the school band; organized 4+ concerts, performed in 15+, 
-            played bass, guitar, piano, drums & vocals, mentored peers, and now I'm recording an original album.
+            I&apos;m a School Band Performer & Head, I also lead the school band; organized 4+ concerts, performed in 15+, 
+            played bass, guitar, piano, drums & vocals, mentored peers, and now I&apos;m recording an original album.
           </p>
           <div className="bg-white rounded-lg p-6 shadow-soft">
             <ul className="space-y-3">
